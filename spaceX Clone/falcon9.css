@@ -1,0 +1,105 @@
+body{
+    color: white;
+}
+
+.text{
+    /* color: white; */
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 3; */
+    color: white;
+
+    /* background-color: #f00; */
+}
+.text h1{
+    /* font-size: 9.5em; */
+    font-size: 130px;
+    font-weight: 600;
+}
+.text h4{
+    font-size: 30px;
+    font-weight: 300;
+}
+.bg-img{
+    position: relative;
+    background-image: url("./img/falcon-9.webp");
+    animation: fadeIn 2s ease-in-out;
+}
+.bg-falcon-heavy{
+    position: relative;
+    background-image: url("./img/falcon-heavy.webp");
+    animation: fadeIn 2s ease-in-out;
+}
+.bg-dragon{
+    position: relative;
+    background-image: url("./img/dragon.webp");
+    animation: fadeIn 2s ease-in-out;
+}
+
+.stats{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    text-transform: uppercase;
+}
+.stats div span{
+    font-size: 160px;
+    
+
+}
+
+.stats div h4{
+    font-size: 24px;
+    font-weight:300;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+}
+
+@media(max-width:960px){
+    .text{
+        width: 90%;
+        margin: auto 20px;
+        text-align: center;
+        /* background-col or: #f00; */
+    }
+    .text h1{
+        font-size:60px;
+    }
+    .text h4{
+        font-size: 25px;
+    }
+    .stats{
+        /* width: ; */
+        margin: 0 3em;
+    }
+}
+@media(max-width:600px){
+    .text{
+        width: 90%;
+        margin: auto 20px;
+        text-align: center;
+        /* background-col or: #f00; */
+    }
+    .text h1{
+        
+        font-size:40px;
+    }
+    .text h4{
+        font-size: 18px;
+    }
+}
